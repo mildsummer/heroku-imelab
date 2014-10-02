@@ -13,8 +13,8 @@ var ECT = require('ect');
 var app = express();
 
 // view engine setup
+app.set('views', path.join(__dirname, 'views'));
 app.engine('ect', ECT({ watch: true, root: __dirname + '/views', ext: '.ect' }).render);
-
 app.set('view engine', 'ect');
 
 // uncomment after placing your favicon in /public
