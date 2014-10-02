@@ -6,7 +6,7 @@ router.get('/', function(req, res) {
     res.render('index')
 });
 
-router.get('/template', function(req, res) {
+router.get('/template', function(req, res) {//一応回避
     res.render('index')
 });
 
