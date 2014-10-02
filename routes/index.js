@@ -6,6 +6,8 @@ router.get('/', res.render('index'));
 
 router.get('/template', res.render('index'));
 
-router.get('/:file', res.render(req.params.file));
+router.get('/:file', function(req, res) {
+    res.render(req.params.file)
+});
 
 module.exports = router;
